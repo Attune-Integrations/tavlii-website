@@ -67,7 +67,7 @@ const FEATURES = [
 
 export default function BackOffice() {
   return (
-    <section id="analytics" className="relative bg-[var(--color-ink)] py-24 lg:py-32">
+    <section id="analytics" className="relative bg-[var(--color-bg)] py-24 lg:py-32">
       <div className="pointer-events-none absolute bottom-0 right-0 h-[30rem] w-[30rem] rounded-full bg-[var(--color-orange)]/10 blur-[120px]" />
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
@@ -75,17 +75,17 @@ export default function BackOffice() {
           <h2 className="mt-4 text-balance font-display text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
             Run every location from one dashboard
           </h2>
-          <p className="mt-5 text-lg text-white/60">
+          <p className="mt-5 text-lg text-[var(--color-overlay)]/60">
             From inventory to insight, Tavlii's back office gives you control at scale — with an AI assistant watching the numbers alongside you.
           </p>
         </div>
 
         <div className="mt-16 grid gap-5 lg:grid-cols-3">
           {FEATURES.map((feature) => (
-            <div key={feature.title} className={`card-dark p-7 ${feature.span ?? ''}`}>
+            <div key={feature.title} className={`card p-7 ${feature.span ?? ''}`}>
               <span className="icon-tile">{feature.icon}</span>
               <h3 className="mt-5 font-display text-lg font-bold">{feature.title}</h3>
-              <p className="mt-2 text-sm text-white/60">{feature.description}</p>
+              <p className="mt-2 text-sm text-[var(--color-overlay)]/60">{feature.description}</p>
             </div>
           ))}
 
@@ -100,7 +100,7 @@ export default function BackOffice() {
                   </svg>
                 </span>
                 <h3 className="mt-5 font-display text-lg font-bold">Built-in AI Assistant</h3>
-                <p className="mt-2 max-w-md text-sm text-white/60">
+                <p className="mt-2 max-w-md text-sm text-[var(--color-overlay)]/60">
                   Ask plain-language questions about sales, stock, or staff performance and get instant, accurate answers — no reports to dig through.
                 </p>
               </div>

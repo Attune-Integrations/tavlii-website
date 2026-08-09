@@ -5,24 +5,35 @@
   --font-display: "Manrope", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 
-  --color-ink: #0a0b0e;
-  --color-ink-soft: #101218;
-  --color-surface: #15171e;
-  --color-surface-2: #1b1e26;
-  --color-border-dark: #272b35;
-  --color-muted-dark: #9aa0ac;
-
-  --color-paper: #f6f6f3;
-  --color-paper-2: #ffffff;
-  --color-border-light: #e4e3dd;
-  --color-muted-light: #5c5f66;
-
+  /* brand accents — constant across themes */
   --color-orange: #ffb10a;
   --color-orange-dim: #e6a00a;
   --color-blue: #004ef5;
   --color-blue-soft: #8cafff;
+  --color-ink: #0a0b0e;
+
+  /* constant light "screenshot" surface — used only by the always-light POS UI mockup */
+  --color-paper: #f6f6f3;
+  --color-paper-2: #ffffff;
+
+  /* theme-aware page chrome (defaults below are the dark theme) */
+  --color-bg: #0a0b0e;
+  --color-bg-alt: #101218;
+  --color-surface: #15171e;
+  --color-border: #272b35;
+  --color-text: #f2f3f1;
+  --color-overlay: #ffffff;
 
   --shadow-glow: 0 0 0 1px rgba(255, 177, 10, 0.18), 0 20px 60px -20px rgba(0, 78, 245, 0.35);
+}
+
+:root[data-theme="light"] {
+  --color-bg: #ffffff;
+  --color-bg-alt: #f6f6f3;
+  --color-surface: #ffffff;
+  --color-border: #e4e3dd;
+  --color-text: #0a0b0e;
+  --color-overlay: #0a0b0e;
 }
 
 html {
@@ -31,8 +42,9 @@ html {
 
 body {
   font-family: var(--font-sans);
-  background-color: var(--color-ink);
-  color: #f2f3f1;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 ::selection {
@@ -54,19 +66,11 @@ h1, h2, h3, h4, .font-display {
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold whitespace-nowrap transition-all duration-200 border border-white/20 text-white bg-white/[0.03] hover:bg-white/10 hover:-translate-y-0.5;
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold whitespace-nowrap transition-all duration-200 border border-[var(--color-overlay)]/20 text-[var(--color-overlay)] bg-[var(--color-overlay)]/[0.03] hover:bg-[var(--color-overlay)]/10 hover:-translate-y-0.5;
   }
 
-  .btn-secondary-dark {
-    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold whitespace-nowrap transition-all duration-200 border border-[var(--color-ink)]/15 text-[var(--color-ink)] bg-[var(--color-ink)]/[0.04] hover:bg-[var(--color-ink)]/10;
-  }
-
-  .card-dark {
-    @apply rounded-3xl border border-[var(--color-border-dark)] bg-[var(--color-surface)];
-  }
-
-  .chip {
-    @apply inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/80;
+  .card {
+    @apply rounded-3xl border border-[var(--color-border)] bg-[var(--color-surface)];
   }
 
   .icon-tile {
@@ -74,15 +78,15 @@ h1, h2, h3, h4, .font-display {
   }
 
   .nav-link {
-    @apply text-sm font-medium text-white/70 transition-colors hover:text-white;
+    @apply text-sm font-medium text-[var(--color-overlay)]/70 transition-colors hover:text-[var(--color-overlay)];
   }
 
   .field-label {
-    @apply mb-2 block text-sm font-medium text-white/80;
+    @apply mb-2 block text-sm font-medium text-[var(--color-overlay)]/80;
   }
 
   .field-input {
-    @apply w-full rounded-xl border border-white/15 bg-white/[0.04] px-4 py-3 text-sm text-white placeholder-white/35 outline-none transition-colors focus:border-[var(--color-orange)] focus:bg-white/[0.06];
+    @apply w-full rounded-xl border border-[var(--color-overlay)]/15 bg-[var(--color-overlay)]/[0.04] px-4 py-3 text-sm text-[var(--color-text)] placeholder-[var(--color-overlay)]/35 outline-none transition-colors focus:border-[var(--color-orange)] focus:bg-[var(--color-overlay)]/[0.06];
   }
 }
 
@@ -93,15 +97,8 @@ h1, h2, h3, h4, .font-display {
 
   .bg-grid {
     background-image:
-      linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-    background-size: 44px 44px;
-  }
-
-  .bg-grid-dark {
-    background-image:
-      linear-gradient(to right, rgba(10, 11, 14, 0.06) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(10, 11, 14, 0.06) 1px, transparent 1px);
+      linear-gradient(to right, color-mix(in oklab, currentColor 6%, transparent) 1px, transparent 1px),
+      linear-gradient(to bottom, color-mix(in oklab, currentColor 6%, transparent) 1px, transparent 1px);
     background-size: 44px 44px;
   }
 }

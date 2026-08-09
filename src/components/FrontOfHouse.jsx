@@ -55,8 +55,8 @@ const MENU_TILES = [
 
 export default function FrontOfHouse() {
   return (
-    <section id="software" className="relative overflow-hidden bg-[var(--color-paper)] py-24 text-[var(--color-ink)] lg:py-32">
-      <div className="bg-grid-dark pointer-events-none absolute inset-0" />
+    <section id="software" className="relative overflow-hidden bg-[var(--color-bg-alt)] py-24 text-[var(--color-text)] lg:py-32">
+      <div className="bg-grid pointer-events-none absolute inset-0" />
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <div className="order-2 lg:order-1">
@@ -64,7 +64,7 @@ export default function FrontOfHouse() {
             <h2 className="mt-4 text-balance font-display text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
               Take orders at the speed of service
             </h2>
-            <p className="mt-5 text-lg text-[var(--color-muted-light)]">
+            <p className="mt-5 text-lg text-[var(--color-overlay)]/60">
               An interface fast enough for your busiest rush, and simple enough for a first-day hire to master in minutes.
             </p>
 
@@ -74,7 +74,7 @@ export default function FrontOfHouse() {
                   <span className="icon-tile bg-[var(--color-blue)]/10 text-[var(--color-blue)]">{feature.icon}</span>
                   <div>
                     <h3 className="font-semibold">{feature.title}</h3>
-                    <p className="mt-1 text-sm text-[var(--color-muted-light)]">{feature.description}</p>
+                    <p className="mt-1 text-sm text-[var(--color-overlay)]/60">{feature.description}</p>
                   </div>
                 </div>
               ))}
