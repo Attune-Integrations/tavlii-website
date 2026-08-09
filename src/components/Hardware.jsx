@@ -71,11 +71,11 @@ export default function Hardware({ onProductInterest }) {
                   {product.badge}
                 </span>
               )}
-              <div className="relative aspect-square shrink-0 overflow-hidden rounded-2xl bg-[var(--color-overlay)]/[0.03] sm:w-64">
+              <div className="relative aspect-square shrink-0 overflow-hidden rounded-2xl bg-[var(--color-paper-2)] p-5 sm:w-64">
                 <img
                   src={product.image}
                   alt={product.alt}
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
                   width="600"
                   height="600"
