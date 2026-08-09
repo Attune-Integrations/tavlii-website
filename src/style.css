@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-ink: #0a0b0e;
+  --color-ink-soft: #101218;
+  --color-surface: #15171e;
+  --color-surface-2: #1b1e26;
+  --color-border-dark: #272b35;
+  --color-muted-dark: #9aa0ac;
+
+  --color-paper: #f6f6f3;
+  --color-paper-2: #ffffff;
+  --color-border-light: #e4e3dd;
+  --color-muted-light: #5c5f66;
+
+  --color-volt: #d7ff3e;
+  --color-volt-dim: #b9dc2e;
+  --color-violet: #7c5cfc;
+  --color-violet-soft: #a897ff;
+
+  --shadow-glow: 0 0 0 1px rgba(215, 255, 62, 0.15), 0 20px 60px -20px rgba(124, 92, 252, 0.35);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-ink);
+  color: #f2f3f1;
+}
+
+::selection {
+  background: var(--color-volt);
+  color: var(--color-ink);
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+}
+
+@layer components {
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em];
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold whitespace-nowrap transition-all duration-200 bg-[var(--color-volt)] text-[var(--color-ink)] hover:bg-[var(--color-volt-dim)] hover:-translate-y-0.5 shadow-[0_10px_30px_-8px_rgba(215,255,62,0.55)];
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold whitespace-nowrap transition-all duration-200 border border-white/20 text-white bg-white/[0.03] hover:bg-white/10 hover:-translate-y-0.5;
+  }
+
+  .btn-secondary-dark {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold whitespace-nowrap transition-all duration-200 border border-[var(--color-ink)]/15 text-[var(--color-ink)] bg-[var(--color-ink)]/[0.04] hover:bg-[var(--color-ink)]/10;
+  }
+
+  .card-dark {
+    @apply rounded-3xl border border-[var(--color-border-dark)] bg-[var(--color-surface)];
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/80;
+  }
+
+  .icon-tile {
+    @apply flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[var(--color-volt)]/10 text-[var(--color-volt)];
+  }
+
+  .nav-link {
+    @apply text-sm font-medium text-white/70 transition-colors hover:text-white;
+  }
+
+  .field-label {
+    @apply mb-2 block text-sm font-medium text-white/80;
+  }
+
+  .field-input {
+    @apply w-full rounded-xl border border-white/15 bg-white/[0.04] px-4 py-3 text-sm text-white placeholder-white/35 outline-none transition-colors focus:border-[var(--color-volt)] focus:bg-white/[0.06];
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+
+  .bg-grid-dark {
+    background-image:
+      linear-gradient(to right, rgba(10, 11, 14, 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(10, 11, 14, 0.06) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+}
