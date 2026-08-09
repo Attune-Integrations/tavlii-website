@@ -24,7 +24,14 @@
   --color-text: #f2f3f1;
   --color-overlay: #ffffff;
 
-  --shadow-glow: 0 0 0 1px rgba(255, 177, 10, 0.18), 0 20px 60px -20px rgba(0, 78, 245, 0.35);
+  /* theme-aware brand highlight — primary follows the active logo's accent (orange dark / blue light) */
+  --color-primary: #ffb10a;
+  --color-primary-dim: #e6a00a;
+  --color-on-primary: #0a0b0e;
+  --color-secondary: #004ef5;
+  --color-secondary-soft: #8cafff;
+
+  --shadow-glow: 0 0 0 1px color-mix(in oklab, var(--color-primary) 18%, transparent), 0 20px 60px -20px color-mix(in oklab, var(--color-secondary) 35%, transparent);
 }
 
 :root[data-theme="light"] {
@@ -34,6 +41,12 @@
   --color-border: #e4e3dd;
   --color-text: #0a0b0e;
   --color-overlay: #0a0b0e;
+
+  --color-primary: #004ef5;
+  --color-primary-dim: #0042d0;
+  --color-on-primary: #ffffff;
+  --color-secondary: #ffb10a;
+  --color-secondary-soft: #a6660b;
 }
 
 html {
@@ -48,8 +61,8 @@ body {
 }
 
 ::selection {
-  background: var(--color-orange);
-  color: var(--color-ink);
+  background: var(--color-primary);
+  color: var(--color-on-primary);
 }
 
 h1, h2, h3, h4, .font-display {
@@ -62,7 +75,7 @@ h1, h2, h3, h4, .font-display {
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold whitespace-nowrap transition-all duration-200 bg-[var(--color-orange)] text-[var(--color-ink)] hover:bg-[var(--color-orange-dim)] hover:-translate-y-0.5 shadow-[0_10px_30px_-8px_rgba(255,177,10,0.55)];
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold whitespace-nowrap transition-all duration-200 bg-[var(--color-primary)] text-[var(--color-on-primary)] hover:bg-[var(--color-primary-dim)] hover:-translate-y-0.5 shadow-[0_10px_30px_-8px_color-mix(in_oklab,var(--color-primary)_55%,transparent)];
   }
 
   .btn-secondary {
@@ -74,7 +87,7 @@ h1, h2, h3, h4, .font-display {
   }
 
   .icon-tile {
-    @apply flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[var(--color-orange)]/10 text-[var(--color-orange)];
+    @apply flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[var(--color-primary)]/10 text-[var(--color-primary)];
   }
 
   .nav-link {
@@ -86,7 +99,7 @@ h1, h2, h3, h4, .font-display {
   }
 
   .field-input {
-    @apply w-full rounded-xl border border-[var(--color-overlay)]/15 bg-[var(--color-overlay)]/[0.04] px-4 py-3 text-sm text-[var(--color-text)] placeholder-[var(--color-overlay)]/35 outline-none transition-colors focus:border-[var(--color-orange)] focus:bg-[var(--color-overlay)]/[0.06];
+    @apply w-full rounded-xl border border-[var(--color-overlay)]/15 bg-[var(--color-overlay)]/[0.04] px-4 py-3 text-sm text-[var(--color-text)] placeholder-[var(--color-overlay)]/35 outline-none transition-colors focus:border-[var(--color-primary)] focus:bg-[var(--color-overlay)]/[0.06];
   }
 }
 

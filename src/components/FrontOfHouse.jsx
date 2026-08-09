@@ -60,7 +60,7 @@ export default function FrontOfHouse() {
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <div className="order-2 lg:order-1">
-            <span className="eyebrow text-[var(--color-blue)]">Front-of-House Software</span>
+            <span className="eyebrow text-[var(--color-secondary)]">Front-of-House Software</span>
             <h2 className="mt-4 text-balance font-display text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
               Take orders at the speed of service
             </h2>
@@ -71,7 +71,7 @@ export default function FrontOfHouse() {
             <div className="mt-10 space-y-6">
               {FEATURES.map((feature) => (
                 <div key={feature.title} className="flex gap-4">
-                  <span className="icon-tile bg-[var(--color-blue)]/10 text-[var(--color-blue)]">{feature.icon}</span>
+                  <span className="icon-tile bg-[var(--color-secondary)]/10 text-[var(--color-secondary)]">{feature.icon}</span>
                   <div>
                     <h3 className="font-semibold">{feature.title}</h3>
                     <p className="mt-1 text-sm text-[var(--color-overlay)]/60">{feature.description}</p>
