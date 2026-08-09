@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import logo from '../assets/logo-dark.png'
 
 const NAV_LINKS = [
   { href: '#hardware', label: 'Hardware' },
@@ -25,15 +26,8 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-8">
-        <a href="#top" className="flex items-center gap-2.5">
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-[var(--color-volt)]">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-              <path d="M4 12L10 18L20 6" stroke="#0A0B0E" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </span>
-          <span className="font-display text-lg font-bold tracking-tight">
-            Tavlii <span className="text-[var(--color-volt)]">POS</span>
-          </span>
+        <a href="#top" className="flex items-center">
+          <img src={logo} alt="Tavlii POS" className="h-8 w-auto sm:h-9" />
         </a>
 
         <nav className="hidden items-center gap-8 lg:flex">

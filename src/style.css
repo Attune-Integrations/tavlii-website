@@ -17,12 +17,12 @@
   --color-border-light: #e4e3dd;
   --color-muted-light: #5c5f66;
 
-  --color-volt: #d7ff3e;
-  --color-volt-dim: #b9dc2e;
-  --color-violet: #7c5cfc;
-  --color-violet-soft: #a897ff;
+  --color-orange: #ffb10a;
+  --color-orange-dim: #e6a00a;
+  --color-blue: #004ef5;
+  --color-blue-soft: #8cafff;
 
-  --shadow-glow: 0 0 0 1px rgba(215, 255, 62, 0.15), 0 20px 60px -20px rgba(124, 92, 252, 0.35);
+  --shadow-glow: 0 0 0 1px rgba(255, 177, 10, 0.18), 0 20px 60px -20px rgba(0, 78, 245, 0.35);
 }
 
 html {
@@ -36,7 +36,7 @@ body {
 }
 
 ::selection {
-  background: var(--color-volt);
+  background: var(--color-orange);
   color: var(--color-ink);
 }
 
@@ -50,7 +50,7 @@ h1, h2, h3, h4, .font-display {
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold whitespace-nowrap transition-all duration-200 bg-[var(--color-volt)] text-[var(--color-ink)] hover:bg-[var(--color-volt-dim)] hover:-translate-y-0.5 shadow-[0_10px_30px_-8px_rgba(215,255,62,0.55)];
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold whitespace-nowrap transition-all duration-200 bg-[var(--color-orange)] text-[var(--color-ink)] hover:bg-[var(--color-orange-dim)] hover:-translate-y-0.5 shadow-[0_10px_30px_-8px_rgba(255,177,10,0.55)];
   }
 
   .btn-secondary {
@@ -70,7 +70,7 @@ h1, h2, h3, h4, .font-display {
   }
 
   .icon-tile {
-    @apply flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[var(--color-volt)]/10 text-[var(--color-volt)];
+    @apply flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[var(--color-orange)]/10 text-[var(--color-orange)];
   }
 
   .nav-link {
@@ -82,7 +82,7 @@ h1, h2, h3, h4, .font-display {
   }
 
   .field-input {
-    @apply w-full rounded-xl border border-white/15 bg-white/[0.04] px-4 py-3 text-sm text-white placeholder-white/35 outline-none transition-colors focus:border-[var(--color-volt)] focus:bg-white/[0.06];
+    @apply w-full rounded-xl border border-white/15 bg-white/[0.04] px-4 py-3 text-sm text-white placeholder-white/35 outline-none transition-colors focus:border-[var(--color-orange)] focus:bg-white/[0.06];
   }
 }
 

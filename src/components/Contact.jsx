@@ -43,7 +43,7 @@ export default function Contact({ selectedProduct, onProductChange }) {
       <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
         <div className="grid gap-14 lg:grid-cols-2 lg:gap-20">
           <div>
-            <span className="eyebrow text-[var(--color-volt)]">Get Started</span>
+            <span className="eyebrow text-[var(--color-orange)]">Get Started</span>
             <h2 className="mt-4 text-balance font-display text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
               Ready to upgrade your checkout experience?
             </h2>
@@ -110,7 +110,7 @@ export default function Contact({ selectedProduct, onProductChange }) {
               </button>
 
               {status && (
-                <p className="text-center text-sm font-medium text-[var(--color-volt)]" role="status">
+                <p className="text-center text-sm font-medium text-[var(--color-orange)]" role="status">
                   {status}
                 </p>
               )}

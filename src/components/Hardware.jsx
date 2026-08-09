@@ -54,7 +54,7 @@ export default function Hardware({ onProductInterest }) {
     <section id="hardware" className="relative bg-[var(--color-ink-soft)] py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="eyebrow text-[var(--color-volt)]">Hardware Lineup</span>
+          <span className="eyebrow text-[var(--color-orange)]">Hardware Lineup</span>
           <h2 className="mt-4 text-balance font-display text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
             Hardware built to keep up with your business
           </h2>
@@ -67,7 +67,7 @@ export default function Hardware({ onProductInterest }) {
           {PRODUCTS.map((product) => (
             <article key={product.name} className="card-dark group relative flex flex-col overflow-hidden p-2 sm:flex-row">
               {product.badge && (
-                <span className="absolute right-4 top-4 z-10 rounded-full bg-[var(--color-volt)] px-3 py-1 text-xs font-bold text-[var(--color-ink)]">
+                <span className="absolute right-4 top-4 z-10 rounded-full bg-[var(--color-orange)] px-3 py-1 text-xs font-bold text-[var(--color-ink)]">
                   {product.badge}
                 </span>
               )}
@@ -98,7 +98,7 @@ export default function Hardware({ onProductInterest }) {
                 <a
                   href="#contact"
                   onClick={() => onProductInterest(product.name)}
-                  className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-volt)] hover:underline"
+                  className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-orange)] hover:underline"
                 >
                   {product.ctaLabel}
                   <ArrowIcon size={14} />
@@ -108,12 +108,12 @@ export default function Hardware({ onProductInterest }) {
           ))}
 
           {/* Tavlii Table Pro (Coming Soon) */}
-          <article className="relative flex flex-col overflow-hidden rounded-3xl border border-dashed border-white/15 bg-gradient-to-br from-[var(--color-violet)]/10 to-transparent p-2 sm:flex-row">
-            <span className="absolute right-4 top-4 z-10 rounded-full border border-[var(--color-violet-soft)]/40 bg-[var(--color-violet)]/20 px-3 py-1 text-xs font-bold text-[var(--color-violet-soft)]">
+          <article className="relative flex flex-col overflow-hidden rounded-3xl border border-dashed border-white/15 bg-gradient-to-br from-[var(--color-blue)]/10 to-transparent p-2 sm:flex-row">
+            <span className="absolute right-4 top-4 z-10 rounded-full border border-[var(--color-blue-soft)]/40 bg-[var(--color-blue)]/20 px-3 py-1 text-xs font-bold text-[var(--color-blue-soft)]">
               Coming Soon
             </span>
             <div className="relative flex aspect-square shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white/[0.03] sm:w-64">
-              <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="var(--color-violet-soft)" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" opacity="0.7">
+              <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="var(--color-blue-soft)" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" opacity="0.7">
                 <rect x="6" y="3" width="12" height="18" rx="2" />
                 <path d="M10 18h4" />
               </svg>

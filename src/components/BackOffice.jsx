@@ -68,10 +68,10 @@ const FEATURES = [
 export default function BackOffice() {
   return (
     <section id="analytics" className="relative bg-[var(--color-ink)] py-24 lg:py-32">
-      <div className="pointer-events-none absolute bottom-0 right-0 h-[30rem] w-[30rem] rounded-full bg-[var(--color-volt)]/10 blur-[120px]" />
+      <div className="pointer-events-none absolute bottom-0 right-0 h-[30rem] w-[30rem] rounded-full bg-[var(--color-orange)]/10 blur-[120px]" />
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="eyebrow text-[var(--color-volt)]">Back Office &amp; Analytics</span>
+          <span className="eyebrow text-[var(--color-orange)]">Back Office &amp; Analytics</span>
           <h2 className="mt-4 text-balance font-display text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
             Run every location from one dashboard
           </h2>
@@ -89,8 +89,8 @@ export default function BackOffice() {
             </div>
           ))}
 
-          <div className="relative overflow-hidden rounded-3xl border border-[var(--color-volt)]/25 bg-gradient-to-br from-[var(--color-violet)]/20 via-[var(--color-surface)] to-[var(--color-surface)] p-7 lg:col-span-2">
-            <div className="pointer-events-none absolute -top-10 -right-10 h-40 w-40 rounded-full bg-[var(--color-volt)]/20 blur-3xl" />
+          <div className="relative overflow-hidden rounded-3xl border border-[var(--color-orange)]/25 bg-gradient-to-br from-[var(--color-blue)]/20 via-[var(--color-surface)] to-[var(--color-surface)] p-7 lg:col-span-2">
+            <div className="pointer-events-none absolute -top-10 -right-10 h-40 w-40 rounded-full bg-[var(--color-orange)]/20 blur-3xl" />
             <div className="relative flex items-start justify-between gap-4">
               <div>
                 <span className="icon-tile">
@@ -104,7 +104,7 @@ export default function BackOffice() {
                   Ask plain-language questions about sales, stock, or staff performance and get instant, accurate answers — no reports to dig through.
                 </p>
               </div>
-              <span className="hidden shrink-0 rounded-full border border-[var(--color-volt)]/30 bg-[var(--color-volt)]/10 px-3 py-1 text-xs font-semibold text-[var(--color-volt)] sm:inline-block">
+              <span className="hidden shrink-0 rounded-full border border-[var(--color-orange)]/30 bg-[var(--color-orange)]/10 px-3 py-1 text-xs font-semibold text-[var(--color-orange)] sm:inline-block">
                 New
               </span>
             </div>

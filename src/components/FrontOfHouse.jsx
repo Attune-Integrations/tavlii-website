@@ -49,7 +49,7 @@ const MENU_TILES = [
   { label: 'Mains', className: 'bg-[#B9F0D8]' },
   { label: 'Drinks', className: 'bg-[#D7C7FF]' },
   { label: 'Grill', className: 'bg-[#FFC7C7]' },
-  { label: 'Desserts', className: 'bg-[var(--color-volt)]/70' },
+  { label: 'Desserts', className: 'bg-[var(--color-orange)]/70' },
   { label: 'Sides', className: 'bg-[#C7E4FF]' },
 ]
 
@@ -60,7 +60,7 @@ export default function FrontOfHouse() {
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <div className="order-2 lg:order-1">
-            <span className="eyebrow text-[var(--color-violet)]">Front-of-House Software</span>
+            <span className="eyebrow text-[var(--color-blue)]">Front-of-House Software</span>
             <h2 className="mt-4 text-balance font-display text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
               Take orders at the speed of service
             </h2>
@@ -71,7 +71,7 @@ export default function FrontOfHouse() {
             <div className="mt-10 space-y-6">
               {FEATURES.map((feature) => (
                 <div key={feature.title} className="flex gap-4">
-                  <span className="icon-tile bg-[var(--color-violet)]/10 text-[var(--color-violet)]">{feature.icon}</span>
+                  <span className="icon-tile bg-[var(--color-blue)]/10 text-[var(--color-blue)]">{feature.icon}</span>
                   <div>
                     <h3 className="font-semibold">{feature.title}</h3>
                     <p className="mt-1 text-sm text-[var(--color-muted-light)]">{feature.description}</p>
@@ -86,7 +86,7 @@ export default function FrontOfHouse() {
             <div className="mx-auto max-w-md rounded-[2rem] border border-black/5 bg-[var(--color-paper-2)] p-5 shadow-2xl shadow-black/10">
               <div className="flex items-center justify-between rounded-xl bg-[var(--color-ink)] p-3 text-white">
                 <div className="flex gap-1.5 rounded-lg bg-white/10 p-1 text-xs font-semibold">
-                  <span className="rounded-md bg-[var(--color-volt)] px-3 py-1.5 text-[var(--color-ink)]">Dining</span>
+                  <span className="rounded-md bg-[var(--color-orange)] px-3 py-1.5 text-[var(--color-ink)]">Dining</span>
                   <span className="px-3 py-1.5 text-white/60">Takeaway</span>
                 </div>
                 <span className="rounded-md bg-white/10 px-2 py-1 text-[10px] font-medium text-white/70">Table 12</span>
@@ -103,11 +103,11 @@ export default function FrontOfHouse() {
               <div className="mt-4 space-y-2 rounded-xl border border-black/5 bg-[var(--color-paper)] p-3">
                 <div className="flex items-center justify-between text-sm">
                   <span className="text-[var(--color-ink)]/80">2× Grilled Chicken</span>
-                  <span className="rounded-full bg-[var(--color-volt)]/30 px-2 py-0.5 text-[10px] font-semibold text-[var(--color-ink)]/70">Fired</span>
+                  <span className="rounded-full bg-[var(--color-orange)]/30 px-2 py-0.5 text-[10px] font-semibold text-[var(--color-ink)]/70">Fired</span>
                 </div>
                 <div className="flex items-center justify-between text-sm">
                   <span className="text-[var(--color-ink)]/80">1× Iced Latte</span>
-                  <span className="rounded-full bg-[var(--color-violet)]/20 px-2 py-0.5 text-[10px] font-semibold text-[var(--color-violet)]">In queue</span>
+                  <span className="rounded-full bg-[var(--color-blue)]/20 px-2 py-0.5 text-[10px] font-semibold text-[var(--color-blue)]">In queue</span>
                 </div>
                 <div className="flex items-center justify-between text-sm">
                   <span className="text-[var(--color-ink)]/80">Uber Eats · Order #4471</span>

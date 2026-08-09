@@ -1,4 +1,4 @@
-export function CheckIcon({ className = '', color = 'var(--color-volt)', size = 16 }) {
+export function CheckIcon({ className = '', color = 'var(--color-orange)', size = 16 }) {
   return (
     <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
       <path d="M4 12L10 18L20 6" />
