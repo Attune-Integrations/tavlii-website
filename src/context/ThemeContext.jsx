@@ -17,7 +17,7 @@ export function ThemeProvider({ children }) {
     window.localStorage.setItem(STORAGE_KEY, theme)
 
     const favicon = document.querySelector('link[rel="icon"]')
-    if (favicon) favicon.href = theme === 'light' ? '/favicon-light.png' : '/favicon.png'
+    if (favicon) favicon.href = `${import.meta.env.BASE_URL}${theme === 'light' ? 'favicon-light.png' : 'favicon.png'}`
   }, [theme])
 
   function toggleTheme() {
