@@ -5,9 +5,9 @@ import { CheckIcon, ArrowIcon } from './icons.jsx'
 
 const PRODUCTS = [
   {
-    name: 'Tavlii Counter',
+    name: 'tavlii Counter',
     image: counterImg,
-    alt: 'Tavlii Counter POS terminal with 10.1-inch touchscreen',
+    alt: 'tavlii Counter POS terminal with 10.1-inch touchscreen',
     tagline: 'Your everyday checkout, engineered simple.',
     features: [
       '10.1″ touchscreen display',
@@ -20,9 +20,9 @@ const PRODUCTS = [
     ctaLabel: 'Book a demo',
   },
   {
-    name: 'Tavlii Counter+',
+    name: 'tavlii Counter+',
     image: counterPlusImg,
-    alt: 'Tavlii Counter+ POS terminal with 13.4-inch touchscreen',
+    alt: 'tavlii Counter+ POS terminal with 13.4-inch touchscreen',
     badge: 'Most Power',
     tagline: 'More screen. More storage. More headroom.',
     features: [
@@ -36,9 +36,9 @@ const PRODUCTS = [
     ctaLabel: 'Book a demo',
   },
   {
-    name: 'Tavlii Table',
+    name: 'tavlii Table',
     image: tableImg,
-    alt: 'Tavlii Table compact tableside POS device',
+    alt: 'tavlii Table compact tableside POS device',
     tagline: 'Tableside service, untethered.',
     features: [
       'Compact, lightweight form factor',
@@ -59,7 +59,7 @@ export default function Hardware({ onProductInterest }) {
             Hardware built to keep up with your business
           </h2>
           <p className="mt-5 text-lg text-[var(--color-overlay)]/60">
-            Every Tavlii terminal ships ready to take payments on day one — no bulky add-ons, no third-party gear to chase down.
+            Every tavlii terminal ships ready to take payments on day one — no bulky add-ons, no third-party gear to chase down.
           </p>
         </div>
 
@@ -107,7 +107,7 @@ export default function Hardware({ onProductInterest }) {
             </article>
           ))}
 
-          {/* Tavlii Table Pro (Coming Soon) */}
+          {/* tavlii Table Pro (Coming Soon) */}
           <article className="relative flex flex-col overflow-hidden rounded-3xl border border-dashed border-[var(--color-overlay)]/15 bg-gradient-to-br from-[var(--color-secondary)]/10 to-transparent p-2 sm:flex-row">
             <span className="absolute right-4 top-4 z-10 rounded-full border border-[var(--color-secondary)]/40 bg-[var(--color-secondary)]/20 px-3 py-1 text-xs font-bold text-[var(--color-secondary-soft)]">
               Coming Soon
@@ -119,14 +119,14 @@ export default function Hardware({ onProductInterest }) {
               </svg>
             </div>
             <div className="flex flex-1 flex-col p-6">
-              <h3 className="font-display text-xl font-bold">Tavlii Table Pro</h3>
+              <h3 className="font-display text-xl font-bold">tavlii Table Pro</h3>
               <p className="mt-1 text-sm text-[var(--color-overlay)]/55">Next-generation tableside processing.</p>
               <p className="mt-5 text-sm text-[var(--color-overlay)]/60">
-                A faster, smarter successor to Tavlii Table is on the way — built for high-volume floors that never stop moving.
+                A faster, smarter successor to tavlii Table is on the way — built for high-volume floors that never stop moving.
               </p>
               <a
                 href="#contact"
-                onClick={() => onProductInterest('Tavlii Table Pro')}
+                onClick={() => onProductInterest('tavlii Table Pro')}
                 className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-overlay)]/80 hover:text-[var(--color-overlay)] hover:underline"
               >
                 Join the waitlist

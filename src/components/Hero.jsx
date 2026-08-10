@@ -18,7 +18,7 @@ export default function Hero() {
             </span>
 
             <h1 className="mt-6 text-balance font-display text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
-              Streamline Your Business with <span className="text-[var(--color-primary)]">Tavlii POS</span>
+              Streamline Your Business with <span className="text-[var(--color-primary)]">tavlii</span>
             </h1>
 
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-[var(--color-overlay)]/65">
@@ -50,7 +50,7 @@ export default function Hero() {
             <div className="relative rounded-[2rem] border border-[var(--color-overlay)]/10 bg-[var(--color-overlay)]/[0.03] p-4 shadow-[var(--shadow-glow)] backdrop-blur">
               <img
                 src={counterPlusImg}
-                alt="Tavlii Counter+ POS terminal with large touchscreen"
+                alt="tavlii Counter+ POS terminal with large touchscreen"
                 className="aspect-square w-full max-w-md rounded-[1.5rem] object-cover"
                 width="600"
                 height="600"

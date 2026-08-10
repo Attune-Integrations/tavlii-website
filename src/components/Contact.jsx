@@ -2,10 +2,10 @@ import { useState } from 'react'
 import { CheckIcon, ArrowIcon } from './icons.jsx'
 
 export const PRODUCT_OPTIONS = [
-  'Tavlii Counter',
-  'Tavlii Counter+',
-  'Tavlii Table',
-  'Tavlii Table Pro (Coming Soon)',
+  'tavlii Counter',
+  'tavlii Counter+',
+  'tavlii Table',
+  'tavlii Table Pro (Coming Soon)',
   'Not sure yet',
 ]
 
@@ -48,7 +48,7 @@ export default function Contact({ selectedProduct, onProductChange }) {
               Ready to upgrade your checkout experience?
             </h2>
             <p className="mt-5 max-w-md text-lg text-[var(--color-overlay)]/60">
-              Book a personalized demo and see Tavlii POS running with your menu, your floor plan, and your business in mind.
+              Book a personalized demo and see tavlii POS running with your menu, your floor plan, and your business in mind.
             </p>
 
             <ul className="mt-10 space-y-4 text-sm text-[var(--color-overlay)]/70">

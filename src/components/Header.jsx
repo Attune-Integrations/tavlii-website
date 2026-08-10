@@ -27,7 +27,7 @@ export default function Header() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-8">
         <a href="#top" className="flex items-center">
-          <img src={logo} alt="Tavlii POS" className="h-8 w-auto sm:h-9" />
+          <img src={logo} alt="tavlii POS" className="h-8 w-auto sm:h-9" />
         </a>
 
         <nav className="hidden items-center gap-8 lg:flex">
