@@ -45,12 +45,12 @@ const FEATURES = [
 ]
 
 const MENU_TILES = [
-  { label: 'Starters', className: 'bg-[#FFE8A3]' },
-  { label: 'Mains', className: 'bg-[#B9F0D8]' },
-  { label: 'Drinks', className: 'bg-[#D7C7FF]' },
-  { label: 'Grill', className: 'bg-[#FFC7C7]' },
-  { label: 'Desserts', className: 'bg-[var(--color-orange)]/70' },
-  { label: 'Sides', className: 'bg-[#C7E4FF]' },
+  { label: 'Starters', className: 'bg-[#E3EFFF]' },
+  { label: 'Mains', className: 'bg-[#C9DFFF]' },
+  { label: 'Drinks', className: 'bg-[#AFCFFF]' },
+  { label: 'Grill', className: 'bg-[#95BFFF]' },
+  { label: 'Desserts', className: 'bg-[#7AAFFF]' },
+  { label: 'Sides', className: 'bg-[#5F9FFF]' },
 ]
 
 export default function FrontOfHouse() {
@@ -86,7 +86,7 @@ export default function FrontOfHouse() {
             <div className="mx-auto max-w-md rounded-[2rem] border border-black/5 bg-[var(--color-paper-2)] p-5 shadow-2xl shadow-black/10">
               <div className="flex items-center justify-between rounded-xl bg-[var(--color-ink)] p-3 text-white">
                 <div className="flex gap-1.5 rounded-lg bg-white/10 p-1 text-xs font-semibold">
-                  <span className="rounded-md bg-[var(--color-orange)] px-3 py-1.5 text-[var(--color-ink)]">Dining</span>
+                  <span className="rounded-md bg-[var(--color-primary)] px-3 py-1.5 text-[var(--color-on-primary)]">Dining</span>
                   <span className="px-3 py-1.5 text-white/60">Takeaway</span>
                 </div>
                 <span className="rounded-md bg-white/10 px-2 py-1 text-[10px] font-medium text-white/70">Table 12</span>
@@ -103,7 +103,7 @@ export default function FrontOfHouse() {
               <div className="mt-4 space-y-2 rounded-xl border border-black/5 bg-[var(--color-paper)] p-3">
                 <div className="flex items-center justify-between text-sm">
                   <span className="text-[var(--color-ink)]/80">2× Grilled Chicken</span>
-                  <span className="rounded-full bg-[var(--color-orange)]/30 px-2 py-0.5 text-[10px] font-semibold text-[var(--color-ink)]/70">Fired</span>
+                  <span className="rounded-full bg-[var(--color-secondary)]/30 px-2 py-0.5 text-[10px] font-semibold text-[var(--color-secondary-soft)]">Fired</span>
                 </div>
                 <div className="flex items-center justify-between text-sm">
                   <span className="text-[var(--color-ink)]/80">1× Iced Latte</span>
@@ -111,7 +111,7 @@ export default function FrontOfHouse() {
                 </div>
                 <div className="flex items-center justify-between text-sm">
                   <span className="text-[var(--color-ink)]/80">Uber Eats · Order #4471</span>
-                  <span className="rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-semibold text-emerald-700">Synced</span>
+                  <span className="rounded-full bg-[var(--color-primary-dim)]/15 px-2 py-0.5 text-[10px] font-semibold text-[var(--color-primary-dim)]">Synced</span>
                 </div>
               </div>
 

@@ -5,9 +5,7 @@
   --font-display: "Manrope", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 
-  /* brand accents — constant across themes */
-  --color-orange: #ffb10a;
-  --color-orange-dim: #e6a00a;
+  /* brand accents */
   --color-blue: #004ef5;
   --color-blue-soft: #8cafff;
   --color-ink: #0a0b0e;
@@ -16,25 +14,7 @@
   --color-paper: #f6f6f3;
   --color-paper-2: #ffffff;
 
-  /* theme-aware page chrome (defaults below are the dark theme) */
-  --color-bg: #0a0b0e;
-  --color-bg-alt: #101218;
-  --color-surface: #15171e;
-  --color-border: #272b35;
-  --color-text: #f2f3f1;
-  --color-overlay: #ffffff;
-
-  /* theme-aware brand highlight — primary follows the active logo's accent (orange dark / blue light) */
-  --color-primary: #ffb10a;
-  --color-primary-dim: #e6a00a;
-  --color-on-primary: #0a0b0e;
-  --color-secondary: #004ef5;
-  --color-secondary-soft: #8cafff;
-
-  --shadow-glow: 0 0 0 1px color-mix(in oklab, var(--color-primary) 18%, transparent), 0 20px 60px -20px color-mix(in oklab, var(--color-secondary) 35%, transparent);
-}
-
-:root[data-theme="light"] {
+  /* page chrome */
   --color-bg: #ffffff;
   --color-bg-alt: #f6f6f3;
   --color-surface: #ffffff;
@@ -42,11 +22,14 @@
   --color-text: #0a0b0e;
   --color-overlay: #0a0b0e;
 
+  /* brand highlight — all blue, two tones for accent variety */
   --color-primary: #004ef5;
   --color-primary-dim: #0042d0;
   --color-on-primary: #ffffff;
-  --color-secondary: #ffb10a;
-  --color-secondary-soft: #a6660b;
+  --color-secondary: #8cafff;
+  --color-secondary-soft: #0042d0;
+
+  --shadow-glow: 0 0 0 1px color-mix(in oklab, var(--color-primary) 18%, transparent), 0 20px 60px -20px color-mix(in oklab, var(--color-secondary) 35%, transparent);
 }
 
 html {

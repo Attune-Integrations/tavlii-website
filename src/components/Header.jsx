@@ -1,8 +1,5 @@
 import { useEffect, useState } from 'react'
-import logoDark from '../assets/logo-dark.png'
-import logoLight from '../assets/logo-light.png'
-import { useTheme } from '../context/ThemeContext.jsx'
-import { SunIcon, MoonIcon } from './icons.jsx'
+import logo from '../assets/logo-light.png'
 
 const NAV_LINKS = [
   { href: '#hardware', label: 'Hardware' },
@@ -12,7 +9,6 @@ const NAV_LINKS = [
 ]
 
 export default function Header() {
-  const { theme, toggleTheme } = useTheme()
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -31,7 +27,7 @@ export default function Header() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-8">
         <a href="#top" className="flex items-center">
-          <img src={theme === 'light' ? logoLight : logoDark} alt="Tavlii POS" className="h-8 w-auto sm:h-9" />
+          <img src={logo} alt="Tavlii POS" className="h-8 w-auto sm:h-9" />
         </a>
 
         <nav className="hidden items-center gap-8 lg:flex">
@@ -43,14 +39,6 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <button
-            aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
-            onClick={toggleTheme}
-            className="flex h-10 w-10 items-center justify-center rounded-lg border border-[var(--color-overlay)]/15 text-[var(--color-overlay)]/80 transition-colors hover:text-[var(--color-overlay)]"
-          >
-            {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
-          </button>
-
           <div className="hidden lg:block">
             <a href="#contact" className="btn-primary">
               Book a Demo
