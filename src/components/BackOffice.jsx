@@ -1,3 +1,6 @@
+import adminScreenshot from '../assets/admin-panel.png'
+import BrowserFrame from './BrowserFrame.jsx'
+
 const FEATURES = [
   {
     title: 'Multi-location inventory',
@@ -79,6 +82,12 @@ export default function BackOffice() {
             From inventory to insight, tavlii's back office gives you control at scale — with an AI assistant watching the numbers alongside you.
           </p>
         </div>
+
+        <BrowserFrame
+          src={adminScreenshot}
+          alt="Tavlii admin dashboard showing daily profit overview, transaction breakdown by day, and inventory stats"
+          className="mx-auto mt-14 max-w-5xl"
+        />
 
         <div className="mt-16 grid gap-5 lg:grid-cols-3">
           {FEATURES.map((feature) => (

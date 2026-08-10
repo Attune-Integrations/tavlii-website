@@ -1,3 +1,7 @@
+import posScreenshot from '../assets/pos-software.png'
+import kitchenScreenshot from '../assets/kitchen-app.jpeg'
+import BrowserFrame from './BrowserFrame.jsx'
+
 const FEATURES = [
   {
     title: 'Dining ⇄ Takeaway, instantly',
@@ -44,15 +48,6 @@ const FEATURES = [
   },
 ]
 
-const MENU_TILES = [
-  { label: 'Starters', className: 'bg-[#E3EFFF]' },
-  { label: 'Mains', className: 'bg-[#C9DFFF]' },
-  { label: 'Drinks', className: 'bg-[#AFCFFF]' },
-  { label: 'Grill', className: 'bg-[#95BFFF]' },
-  { label: 'Desserts', className: 'bg-[#7AAFFF]' },
-  { label: 'Sides', className: 'bg-[#5F9FFF]' },
-]
-
 export default function FrontOfHouse() {
   return (
     <section id="software" className="relative overflow-hidden bg-[var(--color-bg-alt)] py-24 text-[var(--color-text)] lg:py-32">
@@ -81,45 +76,26 @@ export default function FrontOfHouse() {
             </div>
           </div>
 
-          {/* Stylized POS UI mockup */}
           <div className="order-1 lg:order-2">
-            <div className="mx-auto max-w-md rounded-[2rem] border border-black/5 bg-[var(--color-paper-2)] p-5 shadow-2xl shadow-black/10">
-              <div className="flex items-center justify-between rounded-xl bg-[var(--color-ink)] p-3 text-white">
-                <div className="flex gap-1.5 rounded-lg bg-white/10 p-1 text-xs font-semibold">
-                  <span className="rounded-md bg-[var(--color-primary)] px-3 py-1.5 text-[var(--color-on-primary)]">Dining</span>
-                  <span className="px-3 py-1.5 text-white/60">Takeaway</span>
-                </div>
-                <span className="rounded-md bg-white/10 px-2 py-1 text-[10px] font-medium text-white/70">Table 12</span>
-              </div>
-
-              <div className="mt-4 grid grid-cols-3 gap-2.5">
-                {MENU_TILES.map((tile) => (
-                  <div key={tile.label} className={`rounded-xl p-3 text-xs font-semibold text-[var(--color-ink)]/80 ${tile.className}`}>
-                    {tile.label}
-                  </div>
-                ))}
-              </div>
-
-              <div className="mt-4 space-y-2 rounded-xl border border-black/5 bg-[var(--color-paper)] p-3">
-                <div className="flex items-center justify-between text-sm">
-                  <span className="text-[var(--color-ink)]/80">2× Grilled Chicken</span>
-                  <span className="rounded-full bg-[var(--color-secondary)]/30 px-2 py-0.5 text-[10px] font-semibold text-[var(--color-secondary-soft)]">Fired</span>
-                </div>
-                <div className="flex items-center justify-between text-sm">
-                  <span className="text-[var(--color-ink)]/80">1× Iced Latte</span>
-                  <span className="rounded-full bg-[var(--color-blue)]/20 px-2 py-0.5 text-[10px] font-semibold text-[var(--color-blue)]">In queue</span>
-                </div>
-                <div className="flex items-center justify-between text-sm">
-                  <span className="text-[var(--color-ink)]/80">Uber Eats · Order #4471</span>
-                  <span className="rounded-full bg-[var(--color-primary-dim)]/15 px-2 py-0.5 text-[10px] font-semibold text-[var(--color-primary-dim)]">Synced</span>
-                </div>
-              </div>
-
-              <button className="mt-4 w-full rounded-xl bg-[var(--color-ink)] py-3 text-sm font-semibold text-white">
-                Send to Kitchen
-              </button>
-            </div>
+            <BrowserFrame src={posScreenshot} alt="Tavlii POS order screen showing a drinks menu and an active bill" />
           </div>
+        </div>
+
+        <div className="mt-20 lg:mt-28">
+          <div className="mx-auto max-w-2xl text-center">
+            <span className="eyebrow text-[var(--color-secondary)]">Tavlii Kitchen</span>
+            <h3 className="mt-4 text-balance font-display text-2xl font-extrabold tracking-tight sm:text-3xl">
+              Every order, synced live to the kitchen
+            </h3>
+            <p className="mt-4 text-[var(--color-overlay)]/60">
+              A dedicated kitchen display board moves tickets from New to Preparing to Ready to Serve — no dockets, no shouting across the pass.
+            </p>
+          </div>
+          <BrowserFrame
+            src={kitchenScreenshot}
+            alt="Tavlii Kitchen display board with orders organized into New, Preparing, Ready to Serve, and Completed columns"
+            className="mx-auto mt-10 max-w-4xl"
+          />
         </div>
       </div>
     </section>
