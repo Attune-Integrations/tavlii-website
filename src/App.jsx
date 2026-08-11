@@ -6,6 +6,7 @@ import FrontOfHouse from './components/FrontOfHouse.jsx'
 import BackOffice from './components/BackOffice.jsx'
 import Contact, { PRODUCT_OPTIONS } from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
+import OriginRibbon from './components/OriginRibbon.jsx'
 
 export default function App() {
   const [selectedProduct, setSelectedProduct] = useState('')
@@ -26,6 +27,7 @@ export default function App() {
         <Contact selectedProduct={selectedProduct} onProductChange={setSelectedProduct} />
       </main>
       <Footer />
+      <OriginRibbon />
     </>
   )
 }
