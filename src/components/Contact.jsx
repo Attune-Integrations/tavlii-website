@@ -15,10 +15,13 @@ const TRUST_POINTS = [
   'No pressure, no obligation',
 ]
 
+const WEB3FORMS_ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
+
 export default function Contact({ selectedProduct, onProductChange }) {
   const [status, setStatus] = useState(null)
+  const [submitting, setSubmitting] = useState(false)
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault()
     const form = e.target
 
@@ -27,14 +30,32 @@ export default function Contact({ selectedProduct, onProductChange }) {
       return
     }
 
-    const data = Object.fromEntries(new FormData(form).entries())
+    const formData = new FormData(form)
+    const firstName = formData.get('name').split(' ')[0]
 
-    // TODO: wire this up to your CRM/email endpoint (e.g. HubSpot, Formspree, custom API).
-    console.log('Demo request submitted:', data)
+    setSubmitting(true)
+    setStatus(null)
 
-    setStatus(`Thanks, ${data.name.split(' ')[0]} — our team will reach out within one business day.`)
-    form.reset()
-    onProductChange('')
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { Accept: 'application/json' },
+        body: formData,
+      })
+      const data = await response.json()
+
+      if (data.success) {
+        setStatus(`Thanks, ${firstName} — our team will reach out within one business day.`)
+        form.reset()
+        onProductChange('')
+      } else {
+        setStatus('Something went wrong — please try again or email us directly.')
+      }
+    } catch {
+      setStatus('Something went wrong — please try again or email us directly.')
+    } finally {
+      setSubmitting(false)
+    }
   }
 
   return (
@@ -65,6 +86,9 @@ export default function Contact({ selectedProduct, onProductChange }) {
 
           <div className="card p-6 sm:p-8">
             <form onSubmit={handleSubmit} className="space-y-5" noValidate>
+              <input type="hidden" name="access_key" value={WEB3FORMS_ACCESS_KEY} />
+              <input type="hidden" name="subject" value="New demo request from tavlii website" />
+
               <div className="grid gap-5 sm:grid-cols-2">
                 <div>
                   <label htmlFor="name" className="field-label">Name</label>
@@ -104,8 +128,8 @@ export default function Contact({ selectedProduct, onProductChange }) {
                 </select>
               </div>
 
-              <button type="submit" className="btn-primary w-full">
-                Submit Inquiry
+              <button type="submit" disabled={submitting} className="btn-primary w-full disabled:cursor-not-allowed disabled:opacity-60">
+                {submitting ? 'Sending…' : 'Submit Inquiry'}
                 <ArrowIcon />
               </button>
 
