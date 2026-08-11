@@ -4,8 +4,8 @@ import BrowserFrame from './BrowserFrame.jsx'
 
 const FEATURES = [
   {
-    title: 'Dining ⇄ Takeaway, instantly',
-    description: 'Seamlessly toggle between Dining and Takeaway without slowing down the line or re-entering an order.',
+    title: 'Dining, Takeaway & table management',
+    description: 'Toggle between Dining and Takeaway, assign active tables, and manage every seat without re-entering an order.',
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <rect x="1" y="5" width="22" height="14" rx="7" />
@@ -24,25 +24,22 @@ const FEATURES = [
     ),
   },
   {
-    title: 'Live kitchen-order tracking',
-    description: 'Kitchen-order software with live docket tracking keeps front and back of house perfectly in sync.',
+    title: 'Live stock counts at checkout',
+    description: 'Every item shows real-time quantity on hand, so staff never sell what the bar or kitchen has already run out of.',
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M9 2h6l1 4H8l1-4Z" />
-        <path d="M6 6h12l1 14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2L6 6Z" />
-        <path d="M9 12h6M9 16h6" />
+        <path d="M21 8L12 3 3 8v8l9 5 9-5V8Z" />
+        <path d="M3 8l9 5 9-5M12 13v8" />
       </svg>
     ),
   },
   {
-    title: 'Color-coded rapid-input menus',
-    description: 'Color-coded menu layouts get staff from order to fired in seconds, even during peak rush.',
+    title: 'Automatic service charge & VAT',
+    description: 'Service charge and VAT calculate instantly on every bill, so totals stay accurate table after table.',
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="3" y="3" width="7" height="7" rx="1.5" />
-        <rect x="14" y="3" width="7" height="7" rx="1.5" />
-        <rect x="3" y="14" width="7" height="7" rx="1.5" />
-        <rect x="14" y="14" width="7" height="7" rx="1.5" />
+        <path d="M6 2h12v20l-3-2-3 2-3-2-3 2V2Z" />
+        <path d="M9 8h6M9 12h6M9 16h3" />
       </svg>
     ),
   },

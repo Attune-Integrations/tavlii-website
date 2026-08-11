@@ -1,7 +1,7 @@
 import counterPlusImg from '../assets/tavlii-counter-plus.jpeg'
 import { CheckIcon, ArrowIcon } from './icons.jsx'
 
-const TRUST_CHIPS = ['10.1″–13.4″ touchscreens', 'Built-in card processing', '3-hour backup battery']
+const TRUST_CHIPS = ['Built-in card processing', '10.1″-13.4″ touchscreens', 'Up to 2 hours backup battery life', "Comprehensive service for the device and the software"]
 
 export default function Hero() {
   return (
@@ -22,7 +22,7 @@ export default function Hero() {
             </h1>
 
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-[var(--color-overlay)]/65">
-              The all-in-one, cloud-based Point of Sale system built for retail and restaurants. Powerful software meets sleek hardware.
+              “All-in-one” device with payment taking, receipt printing and sales for <span className="text-[var(--color-ink)]">all retail businesses</span>. Powerful software meets sleek hardware.
             </p>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -35,7 +35,7 @@ export default function Hero() {
               </a>
             </div>
 
-            <div className="mt-12 flex flex-wrap gap-x-8 gap-y-3 text-sm text-[var(--color-overlay)]/50">
+            <div className="mt-12 flex flex-col gap-x-8 gap-y-3 text-sm text-[var(--color-overlay)]/50">
               {TRUST_CHIPS.map((chip) => (
                 <div key={chip} className="flex items-center gap-2">
                   <CheckIcon size={16} />
