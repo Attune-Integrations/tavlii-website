@@ -4,6 +4,7 @@ const NAV_LINKS = [
   { href: '#hardware', label: 'Hardware' },
   { href: '#software', label: 'Front-of-House' },
   { href: '#analytics', label: 'Back Office' },
+  { href: '#customers', label: 'Customers' },
   { href: '#contact', label: 'Contact' },
 ]
 
