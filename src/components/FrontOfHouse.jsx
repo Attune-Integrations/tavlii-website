@@ -47,19 +47,23 @@ const FEATURES = [
 
 export default function FrontOfHouse() {
   return (
-    <section id="software" className="relative overflow-hidden bg-[var(--color-bg-alt)] py-24 text-[var(--color-text)] lg:py-32">
+    <section id="software" className="relative overflow-hidden bg-[var(--color-bg-alt)] text-[var(--color-text)]">
       <div className="bg-grid pointer-events-none absolute inset-0" />
-      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid items-center gap-16 lg:grid-cols-2">
-          <div className="order-2 lg:order-1">
-            <span className="eyebrow text-[var(--color-secondary)]">Front-of-House Software</span>
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-8 pb-30">
+        <div className="mt-20 lg:mt-28 mb-10">
+          <div className="mx-auto max-w-2xl text-center">
+            <span className="eyebrow text-[var(--color-primary)]">Front-of-House Software</span>
             <h2 className="mt-4 text-balance font-display text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
               Take orders at the speed of service
             </h2>
             <p className="mt-5 text-lg text-[var(--color-overlay)]/60">
               An interface fast enough for your busiest rush, and simple enough for a first-day hire to master in minutes.
             </p>
+          </div>
+        </div>
 
+        <div className="grid items-center gap-16 lg:grid-cols-2">
+          <div className="order-2 lg:order-1">
             <div className="mt-10 space-y-6">
               {FEATURES.map((feature) => (
                 <div key={feature.title} className="flex gap-4">
@@ -78,9 +82,9 @@ export default function FrontOfHouse() {
           </div>
         </div>
 
-        <div className="mt-20 lg:mt-28">
+        <div className="mt-20">
           <div className="mx-auto max-w-2xl text-center">
-            <span className="eyebrow text-[var(--color-secondary)]">Tavlii Kitchen</span>
+            <span className=" text-[var(--color-primary)]">tavlii Kitchen</span>
             <h3 className="mt-4 text-balance font-display text-2xl font-extrabold tracking-tight sm:text-3xl">
               Every order, synced live to the kitchen
             </h3>

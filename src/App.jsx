@@ -4,6 +4,7 @@ import Hero from './components/Hero.jsx'
 import Hardware from './components/Hardware.jsx'
 import FrontOfHouse from './components/FrontOfHouse.jsx'
 import BackOffice from './components/BackOffice.jsx'
+import Customers from './components/Customers.jsx'
 import Contact, { PRODUCT_OPTIONS } from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
 import OriginRibbon from './components/OriginRibbon.jsx'
@@ -24,6 +25,7 @@ export default function App() {
         <Hardware onProductInterest={handleProductInterest} />
         <FrontOfHouse />
         <BackOffice />
+        <Customers />
         <Contact selectedProduct={selectedProduct} onProductChange={setSelectedProduct} />
       </main>
       <Footer />

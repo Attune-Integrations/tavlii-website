@@ -70,7 +70,7 @@ const FEATURES = [
 
 export default function BackOffice() {
   return (
-    <section id="analytics" className="relative bg-[var(--color-bg)] py-24 lg:py-32">
+    <section id="analytics" className="relative bg-[var(--color-bg)] py-24">
       <div className="pointer-events-none absolute bottom-0 right-0 h-[30rem] w-[30rem] rounded-full bg-[var(--color-primary)]/10 blur-[120px]" />
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
