@@ -45,7 +45,7 @@ const CUSTOMERS = [
 
 export default function Customers() {
   return (
-    <section id="customers" className="relative bg-[var(--color-bg)] py-24">
+    <section id="customers" className="relative border-t border-[var(--color-overlay)]/10 bg-[var(--color-bg)] py-24">
       <div className="pointer-events-none absolute top-0 left-0 h-[30rem] w-[30rem] rounded-full bg-[var(--color-primary)]/10 blur-[120px]" />
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">

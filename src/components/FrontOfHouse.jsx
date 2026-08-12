@@ -1,5 +1,6 @@
 import posScreenshot from '../assets/pos-software.png'
 import kitchenScreenshot from '../assets/kitchen-app.jpeg'
+import bitzifyLogo from '../assets/BITZIFY.png'
 import BrowserFrame from './BrowserFrame.jsx'
 
 const FEATURES = [
@@ -49,7 +50,7 @@ export default function FrontOfHouse() {
   return (
     <section id="software" className="relative overflow-hidden bg-[var(--color-bg-alt)] text-[var(--color-text)]">
       <div className="bg-grid pointer-events-none absolute inset-0" />
-      <div className="relative mx-auto max-w-7xl px-6 lg:px-8 pb-30">
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-8 pb-18">
         <div className="mt-20 lg:mt-28 mb-10">
           <div className="mx-auto max-w-2xl text-center">
             <span className="eyebrow text-[var(--color-primary)]">Front-of-House Software</span>
@@ -97,6 +98,11 @@ export default function FrontOfHouse() {
             alt="Tavlii Kitchen display board with orders organized into New, Preparing, Ready to Serve, and Completed columns"
             className="mx-auto mt-10 max-w-4xl"
           />
+        </div>
+
+        <div className="mt-18 flex items-center justify-center gap-2 text-sm text-[var(--color-overlay)]/50">
+          <span>Powered by</span>
+          <img src={bitzifyLogo} alt="Bitzify" className="h-25 w-auto" />
         </div>
       </div>
     </section>
