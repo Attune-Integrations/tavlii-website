@@ -176,9 +176,6 @@ const VERTICALS = [
       { name: 'Cut & Blow Dry', qty: 1 },
       { name: 'Full Colour', qty: 1 },
       { name: 'Gel Manicure', qty: 1 },
-      { name: 'Keratin Treatment', qty: 1 },
-      { name: 'Beard Trim', qty: 1 },
-      { name: 'Shampoo 250ml', qty: 1 },
     ],
   },
 ]
@@ -188,8 +185,8 @@ function buildCart(vertical) {
 }
 
 export default function PosPreview() {
-  const [activeIndex, setActiveIndex] = useState(VERTICALS.length - 1)
-  const [filter, setFilter] = useState(VERTICALS[VERTICALS.length - 1].filters[0])
+  const [activeIndex, setActiveIndex] = useState(0)
+  const [filter, setFilter] = useState(VERTICALS[0].filters[0])
   const [carts, setCarts] = useState(() => Object.fromEntries(VERTICALS.map((v) => [v.key, buildCart(v)])))
   const [toggles, setToggles] = useState(() =>
     Object.fromEntries(VERTICALS.filter((v) => v.toggle).map((v) => [v.key, v.toggle.activeRight]))
@@ -420,7 +417,7 @@ export default function PosPreview() {
               </div>
             </div>
           </div>
-          <p className="mt-3 text-center text-xs text-[var(--color-overlay)]/40">This is a live preview — tap any item to add it to the sale.</p>
+          <p className="mt-3 text-center text-xs text-[var(--color-overlay)]/40">This is a sample live preview — tap any item to add it to the sale.</p>
         </div>
       </div>
     </div>
