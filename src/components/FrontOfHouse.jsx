@@ -41,7 +41,7 @@ export default function FrontOfHouse() {
 
         <div className="mt-18 flex items-center justify-center gap-2 text-sm text-[var(--color-overlay)]/50">
           <span>Powered by</span>
-          <img src={bitzifyLogo} alt="Bitzify" className="h-25 w-auto" />
+          <img src={bitzifyLogo} alt="Bitzify" className="h-25 w-auto pl-6" />
         </div>
       </div>
     </section>

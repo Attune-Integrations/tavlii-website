@@ -2,6 +2,7 @@ import counterImg from '../assets/tavlii-counter.jpeg'
 import counterPlusImg from '../assets/tavlii-counter-plus.jpeg'
 import tableImg from '../assets/tavlii-table.jpeg'
 import { CheckIcon, ArrowIcon } from './icons.jsx'
+import attuneLogo from '../assets/ATTUNE-INTEGRATIONS.jpg'
 
 const PRODUCTS = [
   {
@@ -52,7 +53,7 @@ const PRODUCTS = [
 
 export default function Hardware({ onProductInterest }) {
   return (
-    <section id="hardware" className="relative bg-[var(--color-bg-alt)] py-24 lg:py-32">
+    <section id="hardware" className="relative bg-[var(--color-bg-alt)] pt-24 lg:pt-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <span className="eyebrow text-[var(--color-primary)]">Hardware Lineup</span>
@@ -143,6 +144,10 @@ export default function Hardware({ onProductInterest }) {
               </div>
             </article>
           ))}
+        </div>
+        <div className="mt-18 flex items-center justify-center gap-2 pb-12 text-sm text-[var(--color-overlay)]/50">
+          <span>Powered by</span>
+          <img src={attuneLogo} alt="Attune-Integrations" className="h-25 w-auto pl-6" />
         </div>
       </div>
     </section>
