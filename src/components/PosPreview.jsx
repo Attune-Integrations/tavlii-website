@@ -250,7 +250,7 @@ export default function PosPreview() {
       </div>
 
       <div className="mt-10 grid items-start gap-10 lg:grid-cols-12 lg:gap-8">
-        <div className="lg:col-span-4">
+        <div key={active.key} className="animate-fade-up lg:col-span-4">
           <span className="eyebrow rounded-full bg-[var(--color-primary)]/10 px-3 py-1 text-[var(--color-primary)]">{active.badge}</span>
           <h3 className="mt-4 text-balance font-display text-2xl font-extrabold tracking-tight sm:text-3xl">{active.heading}</h3>
           <p className="mt-3 text-[var(--color-overlay)]/60">{active.description}</p>
@@ -272,7 +272,7 @@ export default function PosPreview() {
         </div>
 
         <div className="lg:col-span-8">
-          <div className="overflow-hidden rounded-2xl border border-[var(--color-border)] bg-[var(--color-paper)] text-[var(--color-ink)] shadow-2xl shadow-black/10">
+          <div key={active.key} className="animate-fade-up overflow-hidden rounded-2xl border border-[var(--color-border)] bg-[var(--color-paper)] text-[var(--color-ink)] shadow-2xl shadow-black/10">
             <div className="flex flex-wrap items-center justify-between gap-3 bg-[var(--color-ink)] px-4 py-3">
               <div className="flex flex-wrap items-center gap-2">
                 <span className="mr-1 h-6 w-6 shrink-0 rounded-full bg-white/15" />
@@ -319,13 +319,13 @@ export default function PosPreview() {
                 ))}
               </div>
 
-              <div className="grid grid-cols-2 content-start gap-3 overflow-y-auto bg-[var(--color-paper)] p-3 sm:grid-cols-3 lg:h-full">
+              <div key={filter} className="animate-fade-in grid grid-cols-2 content-start gap-3 overflow-y-auto bg-[var(--color-paper)] p-3 sm:grid-cols-3 lg:h-full">
                 {products.map((product) => (
                   <button
                     key={product.name}
                     type="button"
                     onClick={() => addToCart(product)}
-                    className="group flex h-[168px] shrink-0 flex-col self-start rounded-xl border border-[var(--color-border)] bg-white p-2 text-left shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
+                    className="group flex h-[168px] shrink-0 flex-col self-start rounded-xl border border-[var(--color-border)] bg-white p-2 text-left shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md active:scale-95"
                   >
                     <div className="h-16 shrink-0 overflow-hidden rounded-lg bg-[var(--color-bg-alt)] sm:h-20">
                       {product.image && (
@@ -369,7 +369,7 @@ export default function PosPreview() {
                     <p className="py-4 text-center text-xs text-[var(--color-ink)]/40">Tap an item to add it to the sale.</p>
                   )}
                   {cart.map((item) => (
-                    <div key={item.name} className="flex items-center gap-2 border-b border-[var(--color-border)]/60 py-1.5 text-xs">
+                    <div key={`${item.name}-${item.qty}`} className="animate-pop flex items-center gap-2 border-b border-[var(--color-border)]/60 py-1.5 text-xs">
                       <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)]/10 text-[10px] font-bold text-[var(--color-primary)]">
                         {item.qty}
                       </span>
