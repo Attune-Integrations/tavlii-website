@@ -1,7 +1,6 @@
-import kitchenScreenshot from '../assets/kitchen-app.jpeg'
 import bitzifyLogo from '../assets/BITZIFY.png'
-import BrowserFrame from './BrowserFrame.jsx'
 import PosPreview from './PosPreview.jsx'
+import KitchenPreview from './KitchenPreview.jsx'
 
 export default function FrontOfHouse() {
   return (
@@ -32,11 +31,9 @@ export default function FrontOfHouse() {
               A dedicated kitchen display board moves tickets from New to Preparing to Ready to Serve — no dockets, no shouting across the pass.
             </p>
           </div>
-          <BrowserFrame
-            src={kitchenScreenshot}
-            alt="Tavlii Kitchen display board with orders organized into New, Preparing, Ready to Serve, and Completed columns"
-            className="mx-auto mt-10 max-w-4xl"
-          />
+          <div className="mx-auto mt-10 max-w-6xl">
+            <KitchenPreview />
+          </div>
         </div>
 
         <div className="mt-18 flex items-center justify-center gap-2 text-sm text-[var(--color-overlay)]/50">
