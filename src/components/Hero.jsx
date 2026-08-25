@@ -1,4 +1,5 @@
 import counterPlusImg from '../assets/tavlii-counter-plus.jpeg'
+import counterPlusVideo from '../assets/tavlii-counter-plus.mp4'
 import { CheckIcon, ArrowIcon } from './icons.jsx'
 
 const TRUST_CHIPS = ['Built-in card processing', '10.1″-13.4″ touchscreens', 'More than 3 hours backup battery life', "Comprehensive service for the device and the software"]
@@ -48,12 +49,17 @@ export default function Hero() {
           <div className="relative lg:justify-self-end">
             <div className="absolute -inset-6 -z-10 rounded-[2.5rem] bg-gradient-to-br from-[var(--color-primary)]/20 via-transparent to-[var(--color-secondary)]/30 blur-2xl" />
             <div className="relative rounded-[2rem] border border-[var(--color-overlay)]/10 bg-[var(--color-overlay)]/[0.03] p-4 shadow-[var(--shadow-glow)] backdrop-blur">
-              <img
-                src={counterPlusImg}
-                alt="tavlii Counter+ POS terminal with large touchscreen"
-                className="aspect-square w-full max-w-md rounded-[1.5rem] object-cover"
+              <video
+                src={counterPlusVideo}
+                poster={counterPlusImg}
+                aria-label="tavlii Counter+ POS terminal with large touchscreen"
+                className="aspect-[3/2] w-full max-w-md rounded-[1.5rem] object-cover"
                 width="600"
-                height="600"
+                height="300"
+                autoPlay
+                muted
+                loop
+                playsInline
               />
               <div className="absolute -bottom-5 -left-5 flex items-center gap-3 rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-3 shadow-xl sm:-left-8">
                 <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[var(--color-primary)]/15 text-[var(--color-primary)]">
