@@ -4,7 +4,7 @@ import { CheckIcon, ArrowIcon } from './icons.jsx'
 export const PRODUCT_OPTIONS = [
   'tavlii Counter',
   'tavlii Counter+',
-  'tavlii Table Pro (Coming Soon)',
+  'tavlii Table Pro',
   'Not sure yet',
 ]
 
