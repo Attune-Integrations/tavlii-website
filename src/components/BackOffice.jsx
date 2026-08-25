@@ -114,7 +114,7 @@ export default function BackOffice() {
                 </p>
               </div>
               <span className="hidden shrink-0 rounded-full border border-[var(--color-primary)]/30 bg-[var(--color-primary)]/10 px-3 py-1 text-xs font-semibold text-[var(--color-primary)] sm:inline-block">
-                New
+                Coming Soon
               </span>
             </div>
           </div>

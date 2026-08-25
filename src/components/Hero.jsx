@@ -1,7 +1,7 @@
 import counterPlusImg from '../assets/tavlii-counter-plus.jpeg'
 import { CheckIcon, ArrowIcon } from './icons.jsx'
 
-const TRUST_CHIPS = ['Built-in card processing', '10.1″-13.4″ touchscreens', 'Up to 2 hours backup battery life', "Comprehensive service for the device and the software"]
+const TRUST_CHIPS = ['Built-in card processing', '10.1″-13.4″ touchscreens', 'More than 3 hours backup battery life', "Comprehensive service for the device and the software"]
 
 export default function Hero() {
   return (

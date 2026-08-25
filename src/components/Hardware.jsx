@@ -11,11 +11,13 @@ const PRODUCTS = [
     alt: 'tavlii Counter POS terminal with 10.1-inch touchscreen',
     tagline: 'Your everyday checkout, engineered simple.',
     features: [
-      '10.1″ touchscreen display',
-      'Built-in credit card processing',
-      'Integrated receipt printer',
+      '10.1″ Full HD (1080p) touchscreen display',
+      '3GB RAM / 32GB storage',
+      'Octo-core processor (2×2.05GHz + 6×2GHz)',
+      'Built-in card payment device',
+      'Built-in receipt printer',
       'Single power cable setup',
-      'Up to 2 hours backup battery life',
+      'More than 3 hours backup battery life',
     ],
     note: 'Optional: cash drawer · barcode/QR scanner',
     ctaLabel: 'Book a demo',
@@ -27,11 +29,13 @@ const PRODUCTS = [
     badge: 'Most Power',
     tagline: 'More screen. More storage. More headroom.',
     features: [
-      '13.4″ touchscreen display',
-      'Increased data storage capacity',
-      'Built-in credit card processing',
+      '13.4″ 120Hz touchscreen display',
+      '6GB RAM / 256GB storage',
+      'Octo-core 2.2GHz processor',
+      'Built-in card payment device',
+      'Built-in receipt printer',
       'Single power cable setup',
-      'Up to 2 hours backup battery life',
+      'More than 3 hours backup battery life',
     ],
     note: 'Optional: cash drawer · barcode/QR scanner',
     ctaLabel: 'Book a demo',
@@ -42,9 +46,12 @@ const PRODUCTS = [
     alt: 'tavlii Table Pro compact tableside POS device',
     tagline: 'Tableside service, untethered.',
     features: [
-      'Compact, lightweight form factor',
-      'Order and pay right at the table',
-      'Syncs live with your kitchen and back office',
+      '8.7″ 90Hz touchscreen display',
+      '4GB RAM / 64GB storage',
+      'Octo-core processor (2×2.2GHz + 6×2GHz)',
+      'Built-in card payment & receipt printing device',
+      'Interactive robot character with AI assistance',
+      'Up to 12 hours battery life, full charge in 5 hours',
     ],
     ctaLabel: 'Join the waitlist',
     comingSoon: true,
@@ -119,7 +126,6 @@ export default function Hardware({ onProductInterest }) {
                   </>
                 ) : (
                   <>
-                    <p className="mt-1 text-sm text-[var(--color-overlay)]/55">{product.tagline}</p>
                     <ul className="mt-5 space-y-2.5 text-sm text-[var(--color-overlay)]/75">
                       {product.features.map((feature) => (
                         <li key={feature} className="flex gap-2.5">
