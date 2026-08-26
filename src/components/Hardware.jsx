@@ -13,7 +13,7 @@ const PRODUCTS = [
     features: [
       '10.1″ Full HD (1080p) touchscreen display',
       '3GB RAM / 32GB storage',
-      'Octo-core processor (2×2.05GHz + 6×2GHz)',
+      'Octa-core processor (2×2.05GHz + 6×2GHz)',
       'Built-in card payment device',
       'Built-in receipt printer',
       'Single power cable setup',
@@ -30,7 +30,7 @@ const PRODUCTS = [
     features: [
       '13.4″ 120Hz touchscreen display',
       '6GB RAM / 256GB storage',
-      'Octo-core 2.2GHz processor',
+      'Octa-core 2.2GHz processor',
       'Built-in card payment device',
       'Built-in receipt printer',
       'Single power cable setup',
@@ -47,7 +47,7 @@ const PRODUCTS = [
     features: [
       '8.7″ 90Hz touchscreen display',
       '4GB RAM / 64GB storage',
-      'Octo-core processor (2×2.2GHz + 6×2GHz)',
+      'Octa-core processor (2×2.2GHz + 6×2GHz)',
       'Built-in card payment & receipt printing device',
       'Interactive robot character with AI assistance',
       'Up to 12 hours battery life, full charge in 5 hours',
