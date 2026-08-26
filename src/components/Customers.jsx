@@ -1,45 +1,20 @@
+import kccLogo from '../assets/kcc-logo.png'
+import glitchLogo from '../assets/the-glitch-logo.png'
+
 const CUSTOMERS = [
   {
-    name: 'The Establishment',
+    name: 'WorldSpice - KCC',
     category: 'Fine Dining',
-    logo: null, // Replace with import or URL
+    logo: kccLogo,
     bgColor: 'bg-amber-100',
     initials: 'TE',
   },
   {
-    name: 'Urban Kitchen',
+    name: 'The Glitch',
     category: 'Casual Dining',
-    logo: null,
+    logo: glitchLogo,
     bgColor: 'bg-blue-100',
     initials: 'UK',
-  },
-  {
-    name: 'Coffee & Co',
-    category: 'Café',
-    logo: null,
-    bgColor: 'bg-amber-50',
-    initials: 'CC',
-  },
-  {
-    name: 'The Gastropub',
-    category: 'Pub & Restaurant',
-    logo: null,
-    bgColor: 'bg-red-100',
-    initials: 'TG',
-  },
-  {
-    name: 'Night Market',
-    category: 'Food Court',
-    logo: null,
-    bgColor: 'bg-purple-100',
-    initials: 'NM',
-  },
-  {
-    name: 'Timber & Fire',
-    category: 'Steakhouse',
-    logo: null,
-    bgColor: 'bg-orange-100',
-    initials: 'TF',
   },
 ]
 
@@ -55,11 +30,11 @@ export default function Customers() {
           </h2>
         </div>
         
-        <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-16 flex flex-wrap justify-center gap-8">
           {CUSTOMERS.map((customer) => (
             <div
               key={customer.name}
-              className="rounded-lg border border-gray-200 bg-white p-8 shadow-sm transition-all hover:shadow-md hover:border-[var(--color-primary)]/50"
+              className="w-full max-w-sm rounded-lg border border-gray-200 bg-white p-8 shadow-sm transition-all hover:shadow-md hover:border-[var(--color-primary)]/50 sm:w-[calc(50%-1rem)]"
             >
               <div className="flex items-start gap-4">
                 <div className={`flex-shrink-0 h-16 w-16 rounded-lg ${customer.bgColor} flex items-center justify-center`}>
