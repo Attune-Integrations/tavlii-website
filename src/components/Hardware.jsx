@@ -41,7 +41,6 @@ const PRODUCTS = [
   },
   {
     name: 'tavlii Table Pro',
-    image: tableImg,
     alt: 'tavlii Table Pro tableside POS device with interactive robot assistant',
     tagline: 'Next-generation tableside processing.',
     features: [
@@ -89,14 +88,23 @@ export default function Hardware({ onProductInterest }) {
                 'relative aspect-square shrink-0 overflow-hidden rounded-2xl bg-[var(--color-paper-2)] p-5 sm:w-64',
                 product.fullWidth ? 'md:w-80' : '',
               ].join(' ')}>
-                <img
-                  src={product.image}
-                  alt={product.alt}
-                  className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-105"
-                  loading="lazy"
-                  width="600"
-                  height="600"
-                />
+                {product.image ? (
+                  <img
+                    src={product.image}
+                    alt={product.alt}
+                    className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                    width="600"
+                    height="600"
+                  />
+                ) : (
+                  <div className="flex h-full w-full items-center justify-center">
+                    <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary-soft)" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" opacity="0.7">
+                      <rect x="6" y="3" width="12" height="18" rx="2" />
+                      <path d="M10 18h4" />
+                    </svg>
+                  </div>
+                )}
               </div>
               <div className={[
                 'flex flex-1 flex-col p-6',
