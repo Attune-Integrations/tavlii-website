@@ -1,4 +1,6 @@
 import logo from '../assets/logo-light.png'
+import { WhatsAppIcon } from './icons.jsx'
+import { WHATSAPP_NUMBER } from './Contact.jsx'
 
 const NAV_LINKS = [
   { href: '#hardware', label: 'Hardware' },
@@ -22,7 +24,18 @@ export default function Footer() {
             </a>
           ))}
         </nav>
-        <p className="text-sm text-[var(--color-overlay)]/40">© 2026 tavlii POS. All rights reserved.</p>
+        <div className="flex items-center gap-6">
+          <a
+            href={`https://wa.me/${WHATSAPP_NUMBER.replace(/\D/g, '')}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-sm text-[var(--color-overlay)]/50 hover:text-[var(--color-overlay)]"
+          >
+            <WhatsAppIcon size={16} />
+            {WHATSAPP_NUMBER}
+          </a>
+          <p className="text-sm text-[var(--color-overlay)]/40">© 2026 tavlii POS. All rights reserved.</p>
+        </div>
       </div>
     </footer>
   )

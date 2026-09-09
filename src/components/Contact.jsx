@@ -1,5 +1,7 @@
 import { useState } from 'react'
-import { CheckIcon, ArrowIcon } from './icons.jsx'
+import { CheckIcon, ArrowIcon, WhatsAppIcon } from './icons.jsx'
+
+export const WHATSAPP_NUMBER = '+94 71 686 63 63'
 
 export const PRODUCT_OPTIONS = [
   'tavlii Counter',
@@ -81,6 +83,18 @@ export default function Contact({ selectedProduct, onProductChange }) {
                 </li>
               ))}
             </ul>
+
+            <a
+              href={`https://wa.me/${WHATSAPP_NUMBER.replace(/\D/g, '')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-5 inline-flex items-center gap-3 text-sm font-semibold text-[var(--color-overlay)] hover:text-[var(--color-primary)]"
+            >
+              <span className="icon-tile h-9 w-9">
+                <WhatsAppIcon />
+              </span>
+              Chat with us on WhatsApp: {WHATSAPP_NUMBER}
+            </a>
           </div>
 
           <div className="card p-6 sm:p-8">
