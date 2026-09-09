@@ -140,7 +140,9 @@ export default function Hardware({ onProductInterest }) {
         </div>
         <div className="mt-18 flex items-center justify-center gap-2 pb-12 text-sm text-[var(--color-overlay)]/50">
           <span>Powered by</span>
-          <img src={attuneLogo} alt="Attune-Integrations" className="h-25 w-auto pl-6" />
+          <a href="https://attune-integrations.com" target="_blank" rel="noopener noreferrer">
+            <img src={attuneLogo} alt="Attune-Integrations" className="h-25 w-auto pl-6" />
+          </a>
         </div>
       </div>
     </section>
