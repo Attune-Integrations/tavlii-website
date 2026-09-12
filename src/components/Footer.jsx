@@ -1,6 +1,7 @@
 import logo from '../assets/logo-light.png'
 import { WhatsAppIcon } from './icons.jsx'
 import { WHATSAPP_NUMBER } from './Contact.jsx'
+import { highlightTavlii } from './highlightTavlii.jsx'
 
 const NAV_LINKS = [
   { href: '#hardware', label: 'Hardware' },
@@ -34,7 +35,7 @@ export default function Footer() {
             <WhatsAppIcon size={16} />
             {WHATSAPP_NUMBER}
           </a>
-          <p className="text-sm text-[var(--color-overlay)]/40">© 2026 tavlii POS. All rights reserved.</p>
+          <p className="text-sm text-[var(--color-overlay)]/40">{highlightTavlii('© 2026 tavlii POS. All rights reserved.')}</p>
         </div>
       </div>
     </footer>

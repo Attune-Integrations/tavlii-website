@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { highlightTavlii } from './highlightTavlii.jsx'
 
 const INITIAL_TICKETS = [
   {
@@ -117,7 +118,7 @@ export default function KitchenPreview() {
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <path d="M4 4l16 16M20 4L4 20" />
           </svg>
-          Tavlii Kitchen
+          {highlightTavlii('Tavlii Kitchen')}
         </div>
         <div className="flex flex-wrap items-center gap-2">
           <span className="flex items-center gap-1 rounded-full bg-amber-100 px-2.5 py-1 text-[11px] font-bold text-amber-700">

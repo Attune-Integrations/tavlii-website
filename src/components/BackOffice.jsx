@@ -1,5 +1,6 @@
 import adminScreenshot from '../assets/admin-panel.png'
 import BrowserFrame from './BrowserFrame.jsx'
+import { highlightTavlii } from './highlightTavlii.jsx'
 
 const FEATURES = [
   {
@@ -79,7 +80,7 @@ export default function BackOffice() {
             Run every location from one dashboard
           </h2>
           <p className="mt-5 text-lg text-[var(--color-overlay)]/60">
-            From inventory to insight, tavlii's back office gives you control at scale — with an AI assistant watching the numbers alongside you.
+            {highlightTavlii("From inventory to insight, tavlii's back office gives you control at scale — with an AI assistant watching the numbers alongside you.")}
           </p>
         </div>
 

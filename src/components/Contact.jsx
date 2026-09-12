@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { CheckIcon, ArrowIcon, WhatsAppIcon } from './icons.jsx'
+import { highlightTavlii } from './highlightTavlii.jsx'
 
 export const WHATSAPP_NUMBER = '+94 71 686 63 63'
 
@@ -70,7 +71,7 @@ export default function Contact({ selectedProduct, onProductChange }) {
               Ready to upgrade your checkout experience?
             </h2>
             <p className="mt-5 max-w-md text-lg text-[var(--color-overlay)]/60">
-              Book a personalized demo and see tavlii POS running with your menu, your floor plan, and your business in mind.
+              {highlightTavlii('Book a personalized demo and see tavlii POS running with your menu, your floor plan, and your business in mind.')}
             </p>
 
             <ul className="mt-10 space-y-4 text-sm text-[var(--color-overlay)]/70">

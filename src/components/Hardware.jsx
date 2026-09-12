@@ -3,6 +3,7 @@ import counterPlusImg from '../assets/tavlii-counter-plus.jpeg'
 import tableImg from '../assets/tavlii-table-pro.png'
 import { CheckIcon, ArrowIcon } from './icons.jsx'
 import attuneLogo from '../assets/ATTUNE-INTEGRATIONS.jpg'
+import { highlightTavlii } from './highlightTavlii.jsx'
 
 const PRODUCTS = [
   {
@@ -66,7 +67,7 @@ export default function Hardware({ onProductInterest }) {
             Hardware built to keep up with your business
           </h2>
           <p className="mt-5 text-lg text-[var(--color-overlay)]/60">
-            Every tavlii terminal ships ready to take payments on day one — no bulky add-ons, no third-party gear to chase down.
+            {highlightTavlii('Every tavlii terminal ships ready to take payments on day one — no bulky add-ons, no third-party gear to chase down.')}
           </p>
         </div>
 
@@ -110,7 +111,7 @@ export default function Hardware({ onProductInterest }) {
                 'flex flex-1 flex-col p-6',
                 product.fullWidth ? 'justify-center' : '',
               ].join(' ')}>
-                <h3 className="font-display text-xl font-bold">{product.name}</h3>
+                <h3 className="font-display text-xl font-bold">{highlightTavlii(product.name)}</h3>
                 <p className="mt-1 text-sm text-[var(--color-overlay)]/55">{product.tagline}</p>
                 <ul className={[
                   'mt-5 space-y-2.5 text-sm text-[var(--color-overlay)]/75',

@@ -1,6 +1,7 @@
 import counterPlusImg from '../assets/tavlii-counter-plus.jpeg'
 import counterPlusVideo from '../assets/tavlii-counter-plus.mp4'
 import { CheckIcon, ArrowIcon } from './icons.jsx'
+import { highlightTavlii } from './highlightTavlii.jsx'
 
 const TRUST_CHIPS = ['Built-in card processing', '10.1″-13.4″ touchscreens', 'More than 3 hours backup battery life', "Comprehensive service for the device and the software"]
 
@@ -19,7 +20,7 @@ export default function Hero() {
             </span>
 
             <h1 className="mt-6 text-balance font-display text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
-              Streamline Your Business with <span className="text-[var(--color-primary)]">tavlii</span>
+              Streamline Your Business with {highlightTavlii('tavlii')}
             </h1>
 
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-[var(--color-overlay)]/65">
