@@ -1,4 +1,4 @@
-import bitzifyLogo from '../assets/BITZIFY.png'
+import bitzifyLogo from '../assets/partners/bitzify.png'
 import PosPreview from './PosPreview.jsx'
 import KitchenPreview from './KitchenPreview.jsx'
 

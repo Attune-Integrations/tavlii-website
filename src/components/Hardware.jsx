@@ -1,8 +1,8 @@
-import counterImg from '../assets/tavlii-counter.jpeg'
-import counterPlusImg from '../assets/tavlii-counter-plus.jpeg'
-import tableImg from '../assets/tavlii-table-pro.png'
+import counterImg from '../assets/products/tavlii-counter.jpeg'
+import counterPlusImg from '../assets/products/tavlii-counter-plus.jpeg'
+import tableImg from '../assets/products/tavlii-table-pro.png'
 import { CheckIcon, ArrowIcon } from './icons.jsx'
-import attuneLogo from '../assets/ATTUNE-INTEGRATIONS.jpg'
+import attuneLogo from '../assets/partners/attune-integrations.jpg'
 import { highlightTavlii } from './highlightTavlii.jsx'
 
 const PRODUCTS = [

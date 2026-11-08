@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import logo from '../assets/logo-light.png'
+import logo from '../assets/brand/logo-light.png'
 
 const NAV_LINKS = [
   { href: '#hardware', label: 'Hardware' },

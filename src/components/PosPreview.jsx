@@ -1,10 +1,10 @@
 import { useState } from 'react'
 
-const restaurantImages = import.meta.glob('../assets/restuarant/*', { eager: true, import: 'default' })
-const clothingImages = import.meta.glob('../assets/clothing/*', { eager: true, import: 'default' })
-const pharmacyImages = import.meta.glob('../assets/pharmecy/*', { eager: true, import: 'default' })
-const supermarketImages = import.meta.glob('../assets/supermarket/*', { eager: true, import: 'default' })
-const salonImages = import.meta.glob('../assets/saloon/*', { eager: true, import: 'default' })
+const restaurantImages = import.meta.glob('../assets/catalog/restaurant/*', { eager: true, import: 'default' })
+const clothingImages = import.meta.glob('../assets/catalog/clothing/*', { eager: true, import: 'default' })
+const pharmacyImages = import.meta.glob('../assets/catalog/pharmacy/*', { eager: true, import: 'default' })
+const supermarketImages = import.meta.glob('../assets/catalog/supermarket/*', { eager: true, import: 'default' })
+const salonImages = import.meta.glob('../assets/catalog/salon/*', { eager: true, import: 'default' })
 
 function img(map, filename) {
   const key = Object.keys(map).find((path) => path.endsWith(filename))

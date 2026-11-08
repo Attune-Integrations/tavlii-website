@@ -1,5 +1,7 @@
-import kccLogo from '../assets/kcc-logo.png'
-import glitchLogo from '../assets/the-glitch-logo.png'
+import kccLogo from '../assets/customers/kcc-logo.png'
+import glitchLogo from '../assets/customers/the-glitch-logo.png'
+import nawalokaLogo from '../assets/customers/nawaloka-logo.png'
+import strawberryFarmLogo from '../assets/customers/adma-agro-strawberry-farm-logo.png'
 
 const CUSTOMERS = [
   {
@@ -15,6 +17,20 @@ const CUSTOMERS = [
     logo: glitchLogo,
     bgColor: 'bg-blue-100',
     initials: 'UK',
+  },
+  {
+    name: 'Nawaloka Hospitals',
+    category: 'Healthcare',
+    logo: nawalokaLogo,
+    bgColor: 'bg-yellow-50',
+    initials: 'NH',
+  },
+  {
+    name: 'Adma Agro',
+    category: 'Strawberry Farm Shop',
+    logo: strawberryFarmLogo,
+    bgColor: 'bg-red-50',
+    initials: 'SF',
   },
 ]
 

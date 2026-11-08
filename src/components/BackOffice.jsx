@@ -1,4 +1,4 @@
-import adminScreenshot from '../assets/admin-panel.png'
+import adminScreenshot from '../assets/products/admin-panel.png'
 import BrowserFrame from './BrowserFrame.jsx'
 import { highlightTavlii } from './highlightTavlii.jsx'
 

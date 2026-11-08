@@ -1,5 +1,5 @@
-import counterPlusImg from '../assets/tavlii-counter-plus.jpeg'
-import counterPlusVideo from '../assets/tavlii-counter-plus.mp4'
+import counterPlusImg from '../assets/products/tavlii-counter-plus.jpeg'
+import counterPlusVideo from '../assets/products/tavlii-counter-plus.mp4'
 import { CheckIcon, ArrowIcon } from './icons.jsx'
 import { highlightTavlii } from './highlightTavlii.jsx'
 

@@ -1,4 +1,4 @@
-import logo from '../assets/logo-light.png'
+import logo from '../assets/brand/logo-light.png'
 import { WhatsAppIcon } from './icons.jsx'
 import { WHATSAPP_NUMBER } from './Contact.jsx'
 import { highlightTavlii } from './highlightTavlii.jsx'
